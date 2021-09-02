@@ -1,0 +1,992 @@
+{
+  "intents": [
+    {
+      "intent": "Movie_name",
+      "examples": [
+        {
+          "text": "1."
+        },
+        {
+          "text": "9.30 am"
+        },
+        {
+          "text": "captain marvel"
+        },
+        {
+          "text": "civil war"
+        },
+        {
+          "text": "cm"
+        },
+        {
+          "text": "end game"
+        },
+        {
+          "text": "im"
+        },
+        {
+          "text": "imaika nodigal"
+        },
+        {
+          "text": "infinity war"
+        },
+        {
+          "text": "Iron man"
+        },
+        {
+          "text": "Mersal"
+        },
+        {
+          "text": "Raja rani"
+        },
+        {
+          "text": "spider man"
+        },
+        {
+          "text": "thor"
+        }
+      ],
+      "description": "to select movie name from the available movie"
+    },
+    {
+      "intent": "timings",
+      "examples": [
+        {
+          "text": "12:30"
+        },
+        {
+          "text": "12:30:00"
+        },
+        {
+          "text": "afternoon show: 12.30 pm"
+        },
+        {
+          "text": "evening show: 4.00 pm"
+        },
+        {
+          "text": "morning show: 9.00 am"
+        },
+        {
+          "text": "night show: 9.15 pm"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "book",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "book",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "class",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gold",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "platinum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "silver",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "days",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Friday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "monday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saturday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sunday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Thursday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tuesday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Wednesday",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enter",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "enter",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movie_name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "captain marvel",
+          "synonyms": [
+            "cm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "civil war",
+          "synonyms": [
+            "cw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "end game",
+          "synonyms": [
+            "eg",
+            "endgame"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "imaika nodigal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "infinity war",
+          "synonyms": [
+            "infinitywar",
+            "iw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "iron man",
+          "synonyms": [
+            "im"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mersal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Raja rani",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "spider man",
+          "synonyms": [
+            "sm",
+            "spiderman"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "thor",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "next",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "next",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ok",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ok",
+          "synonyms": [
+            "\"ok\"",
+            "'ok'"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "proceed",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "proceed",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "timings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "0900",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1230",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1600",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2115",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "yes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "\"yes\"",
+            "'yes'"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1606593699768",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the movie name"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1606595985254",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1606595985274",
+      "previous_sibling": "handler_8_1606595985274"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the number of seats to be booked"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1606596352535",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1606596352560",
+      "previous_sibling": "handler_2_1606596352560"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1606674393467",
+      "context": {
+        "days": "@days"
+      },
+      "conditions": "@days",
+      "event_name": "input",
+      "dialog_node": "handler_1_1606674393484"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1606596352535",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1606596352560"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1606596566616",
+      "context": {
+        "timings": "@timings"
+      },
+      "conditions": "@timings",
+      "event_name": "input",
+      "dialog_node": "handler_2_1606596566643"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1606671912988",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1606671912991",
+      "previous_sibling": "handler_4_1606671912991"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1606671912988",
+      "event_name": "input",
+      "dialog_node": "handler_4_1606671912991"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1606590091385",
+      "event_name": "input",
+      "dialog_node": "handler_5_1606590091386"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the day"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1606674393467",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1606674393484",
+      "previous_sibling": "handler_1_1606674393484"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1606672660285",
+      "context": {
+        "movie_name": "@movie_name"
+      },
+      "conditions": "@movie_name",
+      "event_name": "input",
+      "dialog_node": "handler_6_1606672660295"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the preferred movie"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1606672660285",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1606672660295",
+      "previous_sibling": "handler_6_1606672660295"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1606590091385",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1606590091386",
+      "previous_sibling": "handler_5_1606590091386"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1606595985254",
+      "context": {
+        "movie_name": "@movie_name"
+      },
+      "conditions": "@movie_name",
+      "event_name": "input",
+      "dialog_node": "handler_8_1606595985274"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "please click the timing"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1606596566616",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1606596566643",
+      "previous_sibling": "handler_2_1606596566643"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter \"next\" to continue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@class",
+      "dialog_node": "node_10_1606675387231",
+      "previous_sibling": "node_4_1606675076824"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Type \"Enter\" to proceed "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@days",
+      "dialog_node": "node_3_1606674105861",
+      "previous_sibling": "node_5_1606673653186"
+    },
+    {
+      "type": "frame",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@proceed",
+      "dialog_node": "node_4_1606672395916",
+      "previous_sibling": "node_8_1606583351578"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "silver : ₹120",
+                "value": {
+                  "input": {
+                    "text": "silver"
+                  }
+                }
+              },
+              {
+                "label": "gold: ₹140",
+                "value": {
+                  "input": {
+                    "text": "gold"
+                  }
+                }
+              },
+              {
+                "label": "platinum : ₹160",
+                "value": {
+                  "input": {
+                    "text": "platinum"
+                  }
+                }
+              }
+            ],
+            "description": "click the class ",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@ok",
+      "dialog_node": "node_4_1606675076824",
+      "previous_sibling": "node_9_1606591468618"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Sunday    Monday   Tuesday",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Wednesday   Thursday   Friday  ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Saturday",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "Enter the day "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@yes",
+      "dialog_node": "node_5_1606673653186",
+      "previous_sibling": "node_4_1606672395916"
+    },
+    {
+      "type": "standard",
+      "title": "timings",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "1.Morning show: 09:00 am",
+                "value": {
+                  "input": {
+                    "text": "0900"
+                  }
+                }
+              },
+              {
+                "label": "2.Afternoon show: 12:30 pm",
+                "value": {
+                  "input": {
+                    "text": "1230"
+                  }
+                }
+              },
+              {
+                "label": "3.Evening Show: 16:00 pm",
+                "value": {
+                  "input": {
+                    "text": "1600"
+                  }
+                }
+              },
+              {
+                "label": "4.Night Show:  21:15 pm",
+                "value": {
+                  "input": {
+                    "text": "2115"
+                  }
+                }
+              }
+            ],
+            "description": "click the time from the given time slot ",
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@enter",
+      "dialog_node": "node_6_1606588314185",
+      "previous_sibling": "node_3_1606674105861"
+    },
+    {
+      "type": "standard",
+      "title": "Movie name",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Thor",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Infinity war",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "End game",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "List of English movies",
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Raja Rani",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Imaika nodhigal",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Mersal",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "List of Tamil movies",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "Enter \"Proceed\" to continue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@book",
+      "dialog_node": "node_8_1606583351578",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "next",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your Booking for $movie_name is booked on         $timings hrs for $number persons , you can show this message in our front office and get your printed copies of your tickets there after payment "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@next",
+      "dialog_node": "node_8_1606593699768",
+      "previous_sibling": "node_10_1606675387231"
+    },
+    {
+      "type": "frame",
+      "title": "time confirmation",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@timings",
+      "dialog_node": "node_9_1606591468618",
+      "previous_sibling": "node_6_1606588314185"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1606583351578",
+      "disabled": true,
+      "dialog_node": "response_1_1606597212959",
+      "previous_sibling": "response_8_1606596867158"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Type \"yes\" to continue"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606672395916",
+      "dialog_node": "response_4_1606673450699"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Type \"yes\" to continue to select timing for your $movie_name  movie"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1606583351578",
+      "disabled": true,
+      "dialog_node": "response_8_1606596867158"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you have selected for $timings hrs show , type \"ok \" to proceed"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1606591468618",
+      "dialog_node": "response_8_1606597387987"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1606583351578",
+      "variable": "$movie_name",
+      "dialog_node": "slot_10_1606595985254",
+      "previous_sibling": "response_1_1606597212959"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1606674105861",
+      "variable": "$days",
+      "dialog_node": "slot_10_1606674393467"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1606583351578",
+      "dialog_node": "slot_1_1606671912988",
+      "previous_sibling": "slot_10_1606595985254"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1606672395916",
+      "variable": "$movie_name",
+      "dialog_node": "slot_1_1606672660285",
+      "previous_sibling": "response_4_1606673450699"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1606591468618",
+      "variable": "$timings",
+      "dialog_node": "slot_4_1606596566616",
+      "previous_sibling": "response_8_1606597387987"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1606593699768",
+      "variable": "$number",
+      "dialog_node": "slot_8_1606596352535"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1606588314185",
+      "dialog_node": "slot_9_1606590091385"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "welcome to Carnival cinemas ,\nhello this is Sirixa the chatbot\n \n Enter \"book\" to know more"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie ticketing bot",
+  "language": "en",
+  "description": ""
+}
